@@ -72,7 +72,7 @@ if (Meteor.isServer) {
                    "Nikola Tesla",
                    "Claude Shannon"];
       for (var i = 0; i < names.length; i++)
-        Players.insert({name: names[i], score: randomScore});
+        Players.insert({name: names[i], score: randomScore()});
     }
   });
 }
